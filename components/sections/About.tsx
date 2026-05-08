@@ -130,7 +130,7 @@ export default function About() {
         {/* Right — Text */}
         <div>
           <h2 className="section-title" style={{ marginBottom: "1.25rem" }}>
-            About <span className="neon-text">Me</span>
+            Decoding My <span className="neon-text">Journey</span>
           </h2>
 
           <p style={{ color: "var(--text-muted)", lineHeight: 1.85, fontSize: "1rem", marginBottom: "1.5rem" }}>

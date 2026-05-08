@@ -15,9 +15,9 @@ export default function Skills() {
         }}
       />
 
-      <div className="section-label">04 — Skills</div>
+      <div className="section-label">04 — Technical Stack</div>
       <h2 className="section-title">
-        Technical <span className="gradient-text">Arsenal</span>
+        Tools of <span className="gradient-text">Innovation</span>
       </h2>
       <p className="section-sub">
         Specialized tools and technologies for Edge AI and Computer Vision research.
