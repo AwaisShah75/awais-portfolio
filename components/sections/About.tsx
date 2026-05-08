@@ -1,6 +1,7 @@
 "use client";
 import { personal, stats } from "@/lib/data";
 import StatCounter from "@/components/ui/StatCounter";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -67,19 +68,39 @@ export default function About() {
             {/* Avatar */}
             <div
               style={{
-                width: "100px",
-                height: "100px",
+                width: "110px",
+                height: "110px",
                 borderRadius: "50%",
                 background: "linear-gradient(135deg, rgba(0,255,204,0.15) 0%, rgba(123,47,190,0.2) 100%)",
                 border: "2px solid rgba(0,255,204,0.3)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                fontSize: "2.2rem",
-                boxShadow: "0 0 30px rgba(0,255,204,0.15)",
+                boxShadow: "0 0 30px rgba(0,255,204,0.2)",
+                overflow: "hidden",
+                position: "relative",
               }}
             >
-              🧠
+              <Image
+                src="/awais-profile.jpg"
+                alt="Awais Shah"
+                fill
+                style={{
+                  objectFit: "cover",
+                  mixBlendMode: "luminosity",
+                  opacity: 0.9,
+                  filter: "contrast(1.2) brightness(1.1)",
+                }}
+              />
+              {/* Overlay gradient to blend edges */}
+              <div
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  background: "radial-gradient(circle, transparent 40%, rgba(13,27,42,0.8) 100%)",
+                  pointerEvents: "none",
+                }}
+              />
             </div>
 
             <div style={{ textAlign: "center" }}>
