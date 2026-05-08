@@ -71,7 +71,7 @@ export default function About() {
                 width: "110px",
                 height: "110px",
                 borderRadius: "50%",
-                background: "linear-gradient(135deg, rgba(0,255,204,0.15) 0%, rgba(123,47,190,0.2) 100%)",
+                background: "linear-gradient(135deg, rgba(13,27,42,0.8) 0%, rgba(0,255,204,0.05) 100%)",
                 border: "2px solid rgba(0,255,204,0.3)",
                 display: "flex",
                 alignItems: "center",
@@ -87,18 +87,9 @@ export default function About() {
                 fill
                 style={{
                   objectFit: "cover",
-                  mixBlendMode: "luminosity",
-                  opacity: 0.9,
-                  filter: "contrast(1.2) brightness(1.1)",
-                }}
-              />
-              {/* Overlay gradient to blend edges */}
-              <div
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  background: "radial-gradient(circle, transparent 40%, rgba(13,27,42,0.8) 100%)",
-                  pointerEvents: "none",
+                  WebkitMaskImage: "radial-gradient(circle at center, black 45%, transparent 70%)",
+                  maskImage: "radial-gradient(circle at center, black 45%, transparent 70%)",
+                  transform: "scale(1.1)", // Slight zoom to fill the circle better
                 }}
               />
             </div>
