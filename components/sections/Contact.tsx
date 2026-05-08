@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { personal } from "@/lib/data";
-import { Mail, Smartphone, MapPin, Github, Fingerprint } from "lucide-react";
+import { Mail, Smartphone, MapPin, Terminal, Fingerprint } from "lucide-react";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -18,7 +18,7 @@ export default function Contact() {
     { icon: <Mail size={22} />, label: "Email", value: personal.email, href: `mailto:${personal.email}` },
     { icon: <Smartphone size={22} />, label: "Phone", value: personal.phone, href: `tel:${personal.phone}` },
     { icon: <MapPin size={22} />, label: "Location", value: "Haripur, Pakistan", href: "#" },
-    { icon: <Github size={22} />, label: "GitHub", value: "AwaisShah75", href: personal.github },
+    { icon: <Terminal size={22} />, label: "GitHub", value: "AwaisShah75", href: personal.github },
     { icon: <Fingerprint size={22} />, label: "ORCID", value: "0009-0007-0928-0378", href: personal.orcid },
   ];
 
