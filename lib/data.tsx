@@ -1,3 +1,5 @@
+import { FileText, Activity, GraduationCap, Car, Hand, School, Trophy, Microscope, Mic } from "lucide-react";
+
 export const personal = {
   name: "Awais Shah",
   title: "Edge AI Researcher & Computer Vision Engineer",
@@ -35,7 +37,7 @@ export const publications = [
     journal: "NUML Int'l Journal of Eng & CS",
     doi: "10.52015/nijec.v4i2.110",
     link: "https://doi.org/10.52015/nijec.v4i2.110",
-    icon: "📄",
+    icon: <FileText size={20} />,
   },
   {
     id: 2,
@@ -46,7 +48,7 @@ export const publications = [
     journal: "Key Result: 83.6% latency reduction vs. cloud-only deployment",
     doi: "",
     link: "https://ssrn.com",
-    icon: "🏥",
+    icon: <Activity size={20} />,
   },
   {
     id: 3,
@@ -57,7 +59,7 @@ export const publications = [
     journal: "191 Respondents · α = 0.750–0.801 · Mean XRI: 58.69/100",
     doi: "",
     link: "https://zenodo.org",
-    icon: "🎓",
+    icon: <GraduationCap size={20} />,
   },
 ];
 
@@ -76,7 +78,7 @@ export const projects = [
     github: "https://github.com/AwaisShah75",
     demo: "",
     color: "#00FFCC",
-    icon: "🚗",
+    icon: <Car size={32} />,
     metrics: null,
   },
   {
@@ -93,7 +95,7 @@ export const projects = [
     github: "https://github.com/AwaisShah75",
     demo: "",
     color: "#7B2FBE",
-    icon: "🤟",
+    icon: <Hand size={32} />,
     metrics: [
       { label: "AP@50", value: 99.0 },
       { label: "AP@75", value: 70.8 },
@@ -117,14 +119,14 @@ export const skills = {
 };
 
 export const timeline = [
-  { year: "2020", event: "Enrolled B.Sc. CS, University of Haripur", icon: "🎓" },
-  { year: "2024", event: "Graduated (CGPA 3.14) · Started Teaching Role at Brainiac", icon: "🏫" },
+  { year: "2020", event: "Enrolled B.Sc. CS, University of Haripur", icon: <GraduationCap size={20} /> },
+  { year: "2024", event: "Graduated (CGPA 3.14) · Started Teaching Role at Brainiac", icon: <School size={20} /> },
   {
     year: "2025",
     event: "Published in NIJEC · Kaggle ML & Python Certifications · IT Exhibition: ANPR Demo to GM of WAPDA",
-    icon: "🏆",
+    icon: <Trophy size={20} />,
   },
-  { year: "2026", event: "XRI Preprint on Zenodo · SSRN Preprint Under Review", icon: "🔬" },
+  { year: "2026", event: "XRI Preprint on Zenodo · SSRN Preprint Under Review", icon: <Microscope size={20} /> },
 ];
 
 export const certifications = [
@@ -135,5 +137,5 @@ export const certifications = [
 export const featuredAchievement = {
   title: "Guest Presenter — Annual IT Exhibition 2025",
   description: "ANPR system demonstrated to the General Manager of WAPDA. Recognized for innovation and execution.",
-  icon: "🎤",
+  icon: <Mic size={24} />,
 };

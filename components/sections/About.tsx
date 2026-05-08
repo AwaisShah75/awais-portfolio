@@ -2,6 +2,7 @@
 import { personal, stats } from "@/lib/data";
 import StatCounter from "@/components/ui/StatCounter";
 import Image from "next/image";
+import { MapPin, GraduationCap, Microscope } from "lucide-react";
 
 export default function About() {
   return (
@@ -104,9 +105,9 @@ export default function About() {
             </div>
 
             {[
-              { icon: "📍", text: personal.location },
-              { icon: "🎓", text: "B.Sc. CS · CGPA 3.14" },
-              { icon: "🔬", text: "Edge Intelligence" },
+              { icon: <MapPin size={14} />, text: personal.location },
+              { icon: <GraduationCap size={14} />, text: "B.Sc. CS · CGPA 3.14" },
+              { icon: <Microscope size={14} />, text: "Edge Intelligence" },
             ].map((item) => (
               <div
                 key={item.text}
@@ -140,9 +141,9 @@ export default function About() {
 
           <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginBottom: "2rem" }}>
             {[
-              { icon: "📍", label: "Location", value: personal.location },
-              { icon: "🎓", label: "Education", value: personal.education },
-              { icon: "🔬", label: "Focus", value: personal.focus },
+              { icon: <MapPin size={18} />, label: "Location", value: personal.location },
+              { icon: <GraduationCap size={18} />, label: "Education", value: personal.education },
+              { icon: <Microscope size={18} />, label: "Focus", value: personal.focus },
             ].map((row) => (
               <div
                 key={row.label}

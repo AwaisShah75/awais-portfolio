@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { personal } from "@/lib/data";
+import { Zap, ArrowDown, FileText } from "lucide-react";
 
 const TYPEWRITER_TEXTS = personal.subtitles;
 
@@ -150,8 +151,8 @@ export default function Hero() {
         }}
       >
         {/* Label */}
-        <div className="section-label" style={{ marginBottom: "1rem", fontSize: "0.65rem" }}>
-          ⚡ Edge AI · Computer Vision · Embedded Systems
+        <div className="section-label" style={{ marginBottom: "1rem", fontSize: "0.65rem", display: "inline-flex", alignItems: "center", gap: "0.4rem" }}>
+          <Zap size={14} color="var(--accent)" /> Edge AI · Computer Vision · Embedded Systems
         </div>
 
         {/* Name */}
