@@ -20,10 +20,10 @@ export default function Skills() {
         <h2 className="section-title">
           Tools of <span className="gradient-text">Innovation</span>
         </h2>
+        <p className="section-sub" style={{ marginBottom: 0 }}>
+          Specialized tools and technologies for Edge AI and Computer Vision research.
+        </p>
       </div>
-      <p className="section-sub">
-        Specialized tools and technologies for Edge AI and Computer Vision research.
-      </p>
 
       <div
         style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem" }}

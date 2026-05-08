@@ -21,10 +21,10 @@ export default function Projects() {
         <h2 className="section-title">
           Intelligent <span className="neon-text">Systems</span>
         </h2>
+        <p className="section-sub" style={{ marginBottom: 0 }}>
+          Real-world edge AI systems built for efficiency, accuracy, and deployment on constrained hardware.
+        </p>
       </div>
-      <p className="section-sub">
-        Real-world edge AI systems built for efficiency, accuracy, and deployment on constrained hardware.
-      </p>
 
       {/* Tab selector */}
       <div style={{ display: "flex", gap: "0.75rem", marginBottom: "2rem", flexWrap: "wrap" }}>

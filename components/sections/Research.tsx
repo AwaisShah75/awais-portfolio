@@ -23,11 +23,11 @@ export default function Research() {
           <h2 className="section-title">
             Pushing the <span className="gradient-text">Boundaries</span>
           </h2>
+          <p className="section-sub" style={{ marginBottom: 0 }}>
+            Peer-reviewed and preprint research at the intersection of Edge AI, embedded systems,
+            and medical technology.
+          </p>
         </div>
-        <p className="section-sub">
-          Peer-reviewed and preprint research at the intersection of Edge AI, embedded systems,
-          and medical technology.
-        </p>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
           {publications.map((pub, i) => (

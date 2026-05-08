@@ -52,10 +52,10 @@ export default function Contact() {
           <h2 className="section-title">
             Let's Build <span className="neon-text">Together</span>
           </h2>
+          <p className="section-sub" style={{ marginBottom: 0 }}>
+            Open to graduate research opportunities, MS/PhD programs, and research collaborations.
+          </p>
         </div>
-        <p className="section-sub">
-          Open to graduate research opportunities, MS/PhD programs, and research collaborations.
-        </p>
 
         {/* Availability banner */}
         <div

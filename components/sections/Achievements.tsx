@@ -19,10 +19,10 @@ export default function Achievements() {
         <h2 className="section-title">
           Impact & <span className="gradient-text">Recognition</span>
         </h2>
+        <p className="section-sub" style={{ marginBottom: 0 }}>
+          A timeline of academic and professional growth in AI research.
+        </p>
       </div>
-      <p className="section-sub">
-        A timeline of academic and professional growth in AI research.
-      </p>
 
       <div
         style={{
