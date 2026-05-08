@@ -242,7 +242,7 @@ export default function Hero() {
             padding: "0 0.5rem",
           }}
         >
-          {["3 Publications", "3 Projects", "3+ Years"].map((badge) => (
+          {["3 Publications", "2 Projects", "2+ Years"].map((badge) => (
             <span
               key={badge}
               className="badge"

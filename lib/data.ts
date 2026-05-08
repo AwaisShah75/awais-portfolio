@@ -20,7 +20,7 @@ export const personal = {
 
 export const stats = [
   { value: 3, label: "Publications", suffix: "" },
-  { value: 3, label: "Projects", suffix: "" },
+  { value: 2, label: "Projects", suffix: "" },
   { value: 400, label: "Training Images", suffix: "+" },
   { value: 15000, label: "Training Iters", suffix: "" },
 ];
