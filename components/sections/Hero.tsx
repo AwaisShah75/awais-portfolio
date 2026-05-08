@@ -260,35 +260,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: "1.5rem",
-          left: "50%",
-          transform: "translateX(-50%)",
-          zIndex: 2,
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: "0.4rem",
-        }}
-      >
-        <span
-          style={{
-            fontFamily: "var(--font-mono)",
-            fontSize: "0.6rem",
-            letterSpacing: "0.2em",
-            color: "var(--text-muted)",
-            textTransform: "uppercase",
-          }}
-        >
-          Scroll
-        </span>
-        <div className="animate-bounce-y" style={{ color: "var(--accent)", fontSize: "1rem" }}>
-          ↓
-        </div>
-      </div>
     </section>
   );
 }
