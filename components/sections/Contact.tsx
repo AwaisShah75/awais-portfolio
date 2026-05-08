@@ -47,10 +47,12 @@ export default function Contact() {
       />
 
       <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-        <div className="section-label">06 — Collaboration</div>
-        <h2 className="section-title">
-          Let's Build <span className="neon-text">Together</span>
-        </h2>
+        <div className="section-header">
+          <div className="section-label">06 — Collaboration</div>
+          <h2 className="section-title">
+            Let's Build <span className="neon-text">Together</span>
+          </h2>
+        </div>
         <p className="section-sub">
           Open to graduate research opportunities, MS/PhD programs, and research collaborations.
         </p>

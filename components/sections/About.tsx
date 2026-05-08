@@ -16,8 +16,13 @@ export default function About() {
         }}
       />
 
-      <div className="section-label">01 — About</div>
-
+      {/* Centered Heading */}
+      <div className="section-header">
+        <div className="section-label">01 — Core Identity</div>
+        <h2 className="section-title">
+          Decoding My <span className="neon-text">Journey</span>
+        </h2>
+      </div>
       <div
         style={{
           display: "grid",
@@ -129,9 +134,6 @@ export default function About() {
 
         {/* Right — Text */}
         <div>
-          <h2 className="section-title" style={{ marginBottom: "1.25rem" }}>
-            Decoding My <span className="neon-text">Journey</span>
-          </h2>
 
           <p style={{ color: "var(--text-muted)", lineHeight: 1.85, fontSize: "1rem", marginBottom: "1.5rem" }}>
             {personal.bio}

@@ -16,10 +16,12 @@ export default function Projects() {
         }}
       />
 
-      <div className="section-label">03 — Applied AI</div>
-      <h2 className="section-title">
-        Intelligent <span className="neon-text">Systems</span>
-      </h2>
+      <div className="section-header">
+        <div className="section-label">03 — Applied AI</div>
+        <h2 className="section-title">
+          Intelligent <span className="neon-text">Systems</span>
+        </h2>
+      </div>
       <p className="section-sub">
         Real-world edge AI systems built for efficiency, accuracy, and deployment on constrained hardware.
       </p>

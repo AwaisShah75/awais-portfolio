@@ -18,10 +18,12 @@ export default function Research() {
       />
 
       <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-        <div className="section-label">02 — Academic Research</div>
-        <h2 className="section-title">
-          Pushing the <span className="gradient-text">Boundaries</span>
-        </h2>
+        <div className="section-header">
+          <div className="section-label">02 — Academic Research</div>
+          <h2 className="section-title">
+            Pushing the <span className="gradient-text">Boundaries</span>
+          </h2>
+        </div>
         <p className="section-sub">
           Peer-reviewed and preprint research at the intersection of Edge AI, embedded systems,
           and medical technology.

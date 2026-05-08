@@ -14,10 +14,12 @@ export default function Achievements() {
         }}
       />
 
-      <div className="section-label">05 — Milestones</div>
-      <h2 className="section-title">
-        Impact & <span className="gradient-text">Recognition</span>
-      </h2>
+      <div className="section-header">
+        <div className="section-label">05 — Milestones</div>
+        <h2 className="section-title">
+          Impact & <span className="gradient-text">Recognition</span>
+        </h2>
+      </div>
       <p className="section-sub">
         A timeline of academic and professional growth in AI research.
       </p>
