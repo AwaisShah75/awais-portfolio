@@ -159,8 +159,12 @@ export default function Projects() {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
-              style={{ borderColor: project.color, color: project.color }}
+              className="btn-secondary"
+              style={{
+                borderColor: project.color,
+                color: project.color,
+                background: `${project.color}10`,
+              }}
             >
               GitHub →
             </a>
