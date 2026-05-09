@@ -158,10 +158,11 @@ export default function Hero() {
         {/* Name */}
         <h1
           style={{
-            fontFamily: "var(--font-display)",
-            fontSize: "clamp(2.4rem, 10vw, 7rem)",
-            fontWeight: 700,
+          fontFamily: "var(--font-hero, 'Orbitron', monospace)",
+            fontSize: "clamp(2rem, 9vw, 6.5rem)",
+            fontWeight: 900,
             lineHeight: 1,
+            letterSpacing: "0.04em",
             marginBottom: "1rem",
             background: "linear-gradient(135deg, #E8F4FD 0%, #00FFCC 60%, #7B2FBE 100%)",
             WebkitBackgroundClip: "text",
@@ -228,8 +229,26 @@ export default function Hero() {
             href="/Awais_Shah_CV_Revised.pdf"
             download="Awais_Shah_CV.pdf"
             className="btn-cta"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "0.5rem",
+              padding: "0.75rem 1.75rem",
+              background: "#FF6B35",
+              border: "1.5px solid #FF6B35",
+              borderRadius: "8px",
+              color: "#fff",
+              fontFamily: "var(--font-mono, 'Fira Code', monospace)",
+              fontSize: "0.88rem",
+              fontWeight: 700,
+              letterSpacing: "0.05em",
+              textDecoration: "none",
+              cursor: "pointer",
+              minHeight: "44px",
+              whiteSpace: "nowrap",
+            }}
           >
-            Download CV
+            ↓ Download CV
           </a>
         </div>
 

@@ -14,9 +14,10 @@
   --text-muted: #6B8CAE;
   --border: rgba(0, 255, 204, 0.12);
   --border-hover: rgba(0, 255, 204, 0.35);
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+  --font-hero: 'Orbitron', monospace;
 }
 
 *, *::before, *::after {
