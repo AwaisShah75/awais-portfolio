@@ -226,7 +226,7 @@ export default function Hero() {
             View Research ↓
           </a>
           <a
-            href="/Awais_Shah_CV_Revised.pdf"
+            href="/Awais_Shah_CV_.pdf"
             download="Awais_Shah_CV.pdf"
             className="btn-cta"
             style={{
