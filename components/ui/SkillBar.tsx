@@ -5,9 +5,10 @@ interface SkillBarProps {
   name: string;
   level: number;
   index?: number;
+  gradient?: string;
 }
 
-export default function SkillBar({ name, level, index = 0 }: SkillBarProps) {
+export default function SkillBar({ name, level, index = 0, gradient = "linear-gradient(90deg, #00FFCC, #7B2FBE)" }: SkillBarProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const fillRef = useRef<HTMLDivElement>(null);
 
@@ -63,7 +64,7 @@ export default function SkillBar({ name, level, index = 0 }: SkillBarProps) {
           style={{
             height: "100%",
             borderRadius: "3px",
-            background: "linear-gradient(90deg, #00FFCC, #7B2FBE)",
+            background: gradient,
             boxShadow: "0 0 10px rgba(0,255,204,0.5)",
             transformOrigin: "left center",
             transform: "scaleX(0)",

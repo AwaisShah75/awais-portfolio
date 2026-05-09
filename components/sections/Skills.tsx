@@ -2,7 +2,16 @@
 import { skills } from "@/lib/data";
 import SkillBar from "@/components/ui/SkillBar";
 
-const allSkills = [...skills.programming, ...skills.ml];
+const GRADIENTS: Record<string, string> = {
+  // Programming languages — cyan → purple
+  Python:     "linear-gradient(90deg, #00FFCC, #7B2FBE)",
+  // ML / Deep Learning — purple → orange
+  TensorFlow: "linear-gradient(90deg, #7B2FBE, #FF6B35)",
+  Keras:      "linear-gradient(90deg, #7B2FBE, #FF6B35)",
+  PyTorch:    "linear-gradient(90deg, #7B2FBE, #FF6B35)",
+  // Vision / Tools — cyan → blue
+  OpenCV:     "linear-gradient(90deg, #00FFCC, #0EA5E9)",
+};
 
 export default function Skills() {
   return (
@@ -43,8 +52,14 @@ export default function Skills() {
           >
             Proficiency Levels
           </div>
-          {allSkills.map((skill, i) => (
-            <SkillBar key={skill.name} name={skill.name} level={skill.level} index={i} />
+          {[...skills.programming, ...skills.ml].map((skill, i) => (
+            <SkillBar
+              key={skill.name}
+              name={skill.name}
+              level={skill.level}
+              index={i}
+              gradient={GRADIENTS[skill.name]}
+            />
           ))}
         </div>
 

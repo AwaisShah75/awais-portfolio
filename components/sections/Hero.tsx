@@ -227,7 +227,7 @@ export default function Hero() {
           <a
             href="/Awais_Shah_CV_Revised.pdf"
             download="Awais_Shah_CV.pdf"
-            className="btn-secondary"
+            className="btn-cta"
           >
             Download CV
           </a>
