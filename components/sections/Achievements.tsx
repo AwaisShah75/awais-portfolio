@@ -97,19 +97,20 @@ export default function Achievements() {
         <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
           {/* Featured achievement */}
           <div
-            className="glass-card"
             style={{
-              padding: "2rem",
-              background:
-                "linear-gradient(135deg, rgba(255,107,53,0.08) 0%, rgba(13,27,42,0.8) 100%)",
-              borderColor: "rgba(255,107,53,0.25)",
-              boxShadow: "0 0 30px rgba(255,107,53,0.08)",
+              padding: "2.5rem",
+              background: "linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 100%)",
+              border: "1px solid rgba(234, 88, 12, 0.2)",
+              borderRadius: "20px",
+              boxShadow: "0 12px 40px rgba(15, 23, 42, 0.05)",
+              backdropFilter: "blur(12px)",
             }}
           >
             <div
               style={{
-                fontSize: "2rem",
-                marginBottom: "0.75rem",
+                fontSize: "2.2rem",
+                marginBottom: "1rem",
+                color: "var(--orange)",
               }}
             >
               {featuredAchievement.icon}
@@ -155,7 +156,7 @@ export default function Achievements() {
           </div>
 
           {/* Certifications */}
-          <div className="glass-card" style={{ padding: "2rem" }}>
+          <div style={{ padding: "2rem", background: "rgba(255,255,255,0.6)", borderRadius: "20px", border: "1px solid var(--border)", boxShadow: "0 8px 32px rgba(15,23,42,0.04)" }}>
             <div
               style={{
                 fontFamily: "var(--font-mono)",
@@ -205,8 +206,8 @@ export default function Achievements() {
                 <span
                   className="badge"
                   style={{
-                    background: "rgba(0,255,204,0.08)",
-                    border: "1px solid rgba(0,255,204,0.2)",
+                    background: "rgba(37,99,235,0.05)",
+                    border: "1px solid rgba(37,99,235,0.15)",
                     color: "var(--accent)",
                     flexShrink: 0,
                   }}

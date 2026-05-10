@@ -75,8 +75,8 @@ export default function Hero() {
         if (n.y < 0 || n.y > canvas.height) n.vy *= -1;
 
         const glow = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.r * 4);
-        glow.addColorStop(0, `rgba(0,255,204,${0.7 + 0.3 * Math.sin(n.pulse)})`);
-        glow.addColorStop(1, "rgba(0,255,204,0)");
+        glow.addColorStop(0, `rgba(37,99,235,${0.7 + 0.3 * Math.sin(n.pulse)})`);
+        glow.addColorStop(1, "rgba(37,99,235,0)");
         ctx.beginPath();
         ctx.arc(n.x, n.y, n.r * 2, 0, Math.PI * 2);
         ctx.fillStyle = glow;
@@ -84,7 +84,7 @@ export default function Hero() {
 
         ctx.beginPath();
         ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(0,255,204,${0.6 + 0.4 * Math.sin(n.pulse)})`;
+        ctx.fillStyle = `rgba(37,99,235,${0.6 + 0.4 * Math.sin(n.pulse)})`;
         ctx.fill();
       });
 
@@ -98,7 +98,7 @@ export default function Hero() {
             ctx.beginPath();
             ctx.moveTo(nodes[i].x, nodes[i].y);
             ctx.lineTo(nodes[j].x, nodes[j].y);
-            ctx.strokeStyle = `rgba(0,255,204,${alpha})`;
+            ctx.strokeStyle = `rgba(37,99,235,${alpha})`;
             ctx.lineWidth = 1;
             ctx.stroke();
           }
@@ -134,7 +134,7 @@ export default function Hero() {
           position: "absolute",
           inset: 0,
           background:
-            "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(0,255,204,0.05) 0%, transparent 70%)",
+            "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(37,99,235,0.05) 0%, transparent 70%)",
           zIndex: 1,
         }}
       />
@@ -158,13 +158,13 @@ export default function Hero() {
         {/* Name */}
         <h1
           style={{
-          fontFamily: "var(--font-hero, 'Orbitron', monospace)",
+          fontFamily: "var(--font-hero, 'Merriweather', serif)",
             fontSize: "clamp(2rem, 9vw, 6.5rem)",
             fontWeight: 900,
             lineHeight: 1,
             letterSpacing: "0.04em",
             marginBottom: "1rem",
-            background: "linear-gradient(135deg, #E8F4FD 0%, #00FFCC 60%, #7B2FBE 100%)",
+            background: "linear-gradient(135deg, #0F172A 0%, #2563EB 100%)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             backgroundClip: "text",
@@ -234,8 +234,8 @@ export default function Hero() {
               alignItems: "center",
               gap: "0.5rem",
               padding: "0.75rem 1.75rem",
-              background: "#FF6B35",
-              border: "1.5px solid #FF6B35",
+              background: "var(--orange)",
+              border: "1.5px solid var(--orange)",
               borderRadius: "8px",
               color: "#fff",
               fontFamily: "var(--font-mono, 'Fira Code', monospace)",
@@ -267,8 +267,8 @@ export default function Hero() {
               key={badge}
               className="badge"
               style={{
-                background: "rgba(0,255,204,0.06)",
-                border: "1px solid rgba(0,255,204,0.2)",
+                background: "rgba(37,99,235,0.06)",
+                border: "1px solid rgba(37,99,235,0.2)",
                 color: "var(--accent)",
                 padding: "0.35rem 0.85rem",
               }}

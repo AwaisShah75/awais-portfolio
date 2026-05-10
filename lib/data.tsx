@@ -31,7 +31,7 @@ export const publications = [
   {
     id: 1,
     status: "Published",
-    statusColor: "#00FFCC",
+    statusColor: "#2563EB",
     venue: "NIJEC 2025",
     title: "A Review of Real-Time Deep Learning–Based Object Detection for Embedded Systems",
     journal: "NUML Int'l Journal of Eng & CS",
@@ -42,7 +42,7 @@ export const publications = [
   {
     id: 2,
     status: "Under Review",
-    statusColor: "#FF6B35",
+    statusColor: "#EA580C",
     venue: "SSRN Preprint",
     title: "Latency-Aware Edge–Cloud Perception for Medical Metaverse Applications",
     journal: "Key Result: 83.6% latency reduction vs. cloud-only deployment",
@@ -53,7 +53,7 @@ export const publications = [
   {
     id: 3,
     status: "Preprint",
-    statusColor: "#7B2FBE",
+    statusColor: "#4F46E5",
     venue: "Zenodo 2026",
     title: "XR Readiness Index (XRI): Assessing XR Adoption in Medical Education — Pakistan",
     journal: "191 Respondents · α = 0.750–0.801 · Mean XRI: 58.69/100",
@@ -77,7 +77,7 @@ export const projects = [
     useCases: ["Parking Automation", "Traffic Monitoring", "Access Control"],
     github: "https://github.com/AwaisShah75",
     demo: "",
-    color: "#00FFCC",
+    color: "#2563EB",
     icon: <Car size={32} />,
     metrics: null,
   },
@@ -94,7 +94,7 @@ export const projects = [
     useCases: ["Accessibility", "Communication Aid", "Education"],
     github: "https://github.com/AwaisShah75",
     demo: "",
-    color: "#7B2FBE",
+    color: "#4F46E5",
     icon: <Hand size={32} />,
     metrics: [
       { label: "AP@50", value: 99.0 },

@@ -3,14 +3,12 @@ import { skills } from "@/lib/data";
 import SkillBar from "@/components/ui/SkillBar";
 
 const GRADIENTS: Record<string, string> = {
-  // Programming languages — cyan → purple
-  Python:     "linear-gradient(90deg, #00FFCC, #7B2FBE)",
-  // ML / Deep Learning — purple → orange
-  TensorFlow: "linear-gradient(90deg, #7B2FBE, #FF6B35)",
-  Keras:      "linear-gradient(90deg, #7B2FBE, #FF6B35)",
-  PyTorch:    "linear-gradient(90deg, #7B2FBE, #FF6B35)",
-  // Vision / Tools — cyan → blue
-  OpenCV:     "linear-gradient(90deg, #00FFCC, #0EA5E9)",
+  // Light theme gradients
+  Python:     "linear-gradient(90deg, #2563EB, #4F46E5)",
+  TensorFlow: "linear-gradient(90deg, #4F46E5, #EA580C)",
+  Keras:      "linear-gradient(90deg, #4F46E5, #EA580C)",
+  PyTorch:    "linear-gradient(90deg, #4F46E5, #EA580C)",
+  OpenCV:     "linear-gradient(90deg, #2563EB, #0EA5E9)",
 };
 
 export default function Skills() {
@@ -19,7 +17,7 @@ export default function Skills() {
       <div
         style={{
           position: "absolute", inset: 0,
-          background: "radial-gradient(ellipse 50% 60% at 100% 100%, rgba(0,255,204,0.05) 0%, transparent 70%)",
+          background: "radial-gradient(ellipse 50% 60% at 100% 100%, rgba(37,99,235,0.05) 0%, transparent 70%)",
           pointerEvents: "none",
         }}
       />
@@ -89,9 +87,9 @@ export default function Skills() {
                   style={{
                     padding: "0.32rem 0.75rem",
                     borderRadius: "6px",
-                    background: "rgba(123,47,190,0.1)",
-                    border: "1px solid rgba(123,47,190,0.25)",
-                    color: "#c084fc",
+                    background: "rgba(79,70,229,0.05)",
+                    border: "1px solid rgba(79,70,229,0.2)",
+                    color: "#4F46E5",
                     fontFamily: "var(--font-mono)",
                     fontSize: "0.72rem",
                     fontWeight: 500,
@@ -99,11 +97,11 @@ export default function Skills() {
                     cursor: "default",
                   }}
                   onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.background = "rgba(123,47,190,0.25)";
+                    (e.currentTarget as HTMLElement).style.background = "rgba(79,70,229,0.1)";
                     (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)";
                   }}
                   onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.background = "rgba(123,47,190,0.1)";
+                    (e.currentTarget as HTMLElement).style.background = "rgba(79,70,229,0.05)";
                     (e.currentTarget as HTMLElement).style.transform = "none";
                   }}
                 >

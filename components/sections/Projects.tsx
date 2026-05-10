@@ -34,10 +34,11 @@ export default function Projects() {
             onClick={() => setActive(i)}
             style={{
               padding: "0.6rem 1.25rem",
-              borderRadius: "8px",
-              border: `1.5px solid ${active === i ? p.color : "rgba(255,255,255,0.1)"}`,
-              background: active === i ? `${p.color}15` : "rgba(13,27,42,0.5)",
+              borderRadius: "10px",
+              border: `1px solid ${active === i ? p.color : "rgba(15,23,42,0.08)"}`,
+              background: active === i ? `${p.color}08` : "rgba(255,255,255,0.6)",
               color: active === i ? p.color : "var(--text-muted)",
+              boxShadow: active === i ? `0 4px 14px ${p.color}20` : "none",
               fontFamily: "var(--font-mono)",
               fontSize: "0.78rem",
               fontWeight: 600,
@@ -57,11 +58,14 @@ export default function Projects() {
 
       {/* Project card */}
       <div
-        className="glass-card"
         style={{
-          padding: "2rem",
-          borderColor: `${project.color}30`,
-          boxShadow: `0 0 40px ${project.color}10`,
+          padding: "2.5rem",
+          background: "rgba(255,255,255,0.7)",
+          border: `1px solid ${project.color}20`,
+          borderRadius: "24px",
+          backdropFilter: "blur(12px)",
+          boxShadow: `0 12px 40px rgba(15, 23, 42, 0.05), 0 0 0 1px ${project.color}05`,
+          transition: "all 0.4s ease",
         }}
         key={project.id}
       >
@@ -100,10 +104,10 @@ export default function Projects() {
                 <span
                   key={s}
                   style={{
-                    padding: "0.25rem 0.65rem",
-                    borderRadius: "6px",
-                    background: `${project.color}10`,
-                    border: `1px solid ${project.color}30`,
+                    padding: "0.25rem 0.75rem",
+                    borderRadius: "8px",
+                    background: `${project.color}08`,
+                    border: `1px solid ${project.color}20`,
                     color: project.color,
                     fontFamily: "var(--font-mono)",
                     fontSize: "0.68rem",
@@ -141,10 +145,10 @@ export default function Projects() {
                 <span
                   key={uc}
                   style={{
-                    padding: "0.22rem 0.65rem",
+                    padding: "0.25rem 0.75rem",
                     borderRadius: "999px",
-                    background: "rgba(255,255,255,0.04)",
-                    border: "1px solid rgba(255,255,255,0.1)",
+                    background: "rgba(15,23,42,0.03)",
+                    border: "1px solid rgba(15,23,42,0.08)",
                     color: "var(--text-muted)",
                     fontFamily: "var(--font-mono)",
                     fontSize: "0.68rem",
@@ -159,12 +163,23 @@ export default function Projects() {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary"
               style={{
-                borderColor: project.color,
-                color: project.color,
-                background: `${project.color}10`,
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                padding: "0.6rem 1.5rem",
+                background: project.color,
+                color: "#FFFFFF",
+                borderRadius: "8px",
+                fontFamily: "var(--font-mono)",
+                fontSize: "0.85rem",
+                fontWeight: 600,
+                textDecoration: "none",
+                boxShadow: `0 6px 20px ${project.color}35`,
+                transition: "all 0.2s ease",
               }}
+              onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-2px)")}
+              onMouseLeave={(e) => (e.currentTarget.style.transform = "none")}
             >
               GitHub →
             </a>
