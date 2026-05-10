@@ -95,7 +95,7 @@ export default function About() {
 
             {[
               { icon: <MapPin size={14} />, text: personal.location },
-              { icon: <GraduationCap size={14} />, text: "B.Sc. CS · CGPA 3.14" },
+              { icon: <GraduationCap size={14} />, text: "BsCS · CGPA 3.14" },
               { icon: <Microscope size={14} />, text: "Edge Intelligence" },
             ].map((item) => (
               <div

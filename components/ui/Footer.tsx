@@ -24,16 +24,15 @@ export default function Footer() {
             fontWeight: 700,
             fontSize: "1.1rem",
             color: "var(--accent)",
-            textShadow: "0 0 20px rgba(0,255,204,0.4)",
           }}
         >
-          AS<span style={{ color: "var(--text-muted)" }}>.dev</span>
+          AS<span style={{ color: "#94A3B8" }}>.dev</span>
         </div>
         <p
           style={{
             fontFamily: "var(--font-mono)",
             fontSize: "0.75rem",
-            color: "var(--text-muted)",
+            color: "#94A3B8",
             letterSpacing: "0.05em",
           }}
         >
@@ -59,7 +58,7 @@ export default function Footer() {
               style={{
                 fontFamily: "var(--font-mono)",
                 fontSize: "0.72rem",
-                color: "var(--text-muted)",
+                color: "#94A3B8",
                 textDecoration: "none",
                 letterSpacing: "0.08em",
                 textTransform: "uppercase",
@@ -69,7 +68,7 @@ export default function Footer() {
                 ((e.target as HTMLElement).style.color = "var(--accent)")
               }
               onMouseLeave={(e) =>
-                ((e.target as HTMLElement).style.color = "var(--text-muted)")
+                ((e.target as HTMLElement).style.color = "#94A3B8")
               }
             >
               {link.label}
