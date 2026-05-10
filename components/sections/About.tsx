@@ -95,7 +95,7 @@ export default function About() {
 
             {[
               { icon: <MapPin size={14} />, text: personal.location },
-              { icon: <GraduationCap size={14} />, text: "BsCS · CGPA 3.14" },
+              { icon: <GraduationCap size={14} />, text: "BS.CS · CGPA 3.14" },
               { icon: <Microscope size={14} />, text: "Edge Intelligence" },
             ].map((item) => (
               <div
@@ -125,29 +125,7 @@ export default function About() {
 
           <div className="glow-divider" />
 
-          <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginBottom: "2rem" }}>
-            {[
-              { icon: <MapPin size={18} />, label: "Location", value: personal.location },
-              { icon: <GraduationCap size={18} />, label: "Education", value: personal.education },
-              { icon: <Microscope size={18} />, label: "Focus", value: personal.focus },
-            ].map((row) => (
-              <div
-                key={row.label}
-                style={{
-                  display: "flex",
-                  gap: "0.75rem",
-                  alignItems: "flex-start",
-                  fontFamily: "var(--font-mono)",
-                  fontSize: "0.82rem",
-                  flexWrap: "wrap",
-                }}
-              >
-                <span style={{ fontSize: "1rem", minWidth: "20px" }}>{row.icon}</span>
-                <span style={{ color: "var(--text-muted)", minWidth: "80px" }}>{row.label}:</span>
-                <span style={{ color: "var(--text)", flex: 1 }}>{row.value}</span>
-              </div>
-            ))}
-          </div>
+
 
           <a href="#contact" className="btn-primary" style={{ display: "inline-flex" }}>
             Get In Touch →
